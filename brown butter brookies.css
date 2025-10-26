@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f8f7f4;
+  color: #3a2d2a;
+  line-height: 1.6;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 4rem;
+  border-bottom: 1px solid #e5e2dd;
+  background: #f9f8f5;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+}
+
+.logo span {
+  display: block;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  color: #7a746d;
+}
+
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #3a2d2a;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #b85c17;
+}
+
+/* ===== RECIPE SECTION ===== */
+.recipe-container {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 2rem;
+}
+
+.recipe-hero {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.recipe-hero img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.recipe-title .category {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: #a19186;
+  letter-spacing: 1px;
+}
+
+.recipe-title h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  margin: 0.3rem 0 1rem;
+}
+
+.recipe-title .description {
+  max-width: 650px;
+  margin: 0 auto;
+  color: #6c605a;
+}
+
+/* ===== DETAILS, INGREDIENTS, STEPS ===== */
+.recipe-details {
+  background: #f2efeb;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.recipe-details .info {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+}
+
+.ingredients h2,
+.instructions h2 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.ingredients ul {
+  list-style: disc inside;
+  margin-bottom: 2rem;
+  line-height: 1.8;
+}
+
+.instructions ol {
+  list-style: decimal inside;
+  line-height: 1.8;
+}
+
+.instructions li + li {
+  margin-top: 0.5rem;
+}
+
+.back-button {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.back-button a {
+  text-decoration: none;
+  background: #867b6f;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.back-button a:hover {
+  background: #b85c17;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .recipe-details .info {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
