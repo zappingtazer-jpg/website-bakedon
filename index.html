@@ -1,46 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Baking Recipes</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f9f9f9;
-        }
-        h1 {
-            color: #333;
-            text-align: center;
-        }
-        .recipe {
-            background: white;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bakedon by Taz</title>
+  <link rel="stylesheet" href="homepage.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>🍪 Baking Recipes</h1>
-    
-    <div class="recipe">
-        <h2>Chocolate Chip Cookies</h2>
-        <p>Classic homemade chocolate chip cookies</p>
+  <header class="navbar">
+    <div class="logo">BAKEDON <span>BY TAZ</span></div>
+    <nav>
+      <a href="homepage.html">Home</a>
+      <a href="tiaz.html">Recipes</a>
+    </nav>
     </div>
-    
-    <div class="recipe">
-        <h2>Banana Bread</h2>
-        <p>Moist and delicious banana bread recipe</p>
-    </div>
-    
-    <div class="recipe">
-        <h2>Vanilla Cupcakes</h2>
-        <p>Fluffy vanilla cupcakes with buttercream frosting</p>
-    </div>
+  </header>
+
+  <main class="content">
+    <section class="intro">
+      <div class="logo-large">BDT</div>
+      <h2>Welcome!</h2>
+      <p>Whether you’re seeking elevated baked goods or comforting classics with a twist. you’ve come to the right place!</p>
+      <a href="tiaz.html" class="btn">Recipes</a>
+    </section>
+
+    <section class="featured">
+      <p class="label">This Just In</p>
+      <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=700&q=80" alt="Apple Crisp">
+      <p class="category">Desserts</p>
+      <h3>Apple crumble</h3>
+      <p>Apple crumble combines the warm, soft, and sweet-tart contrast of baked apples with a crunchy, buttery, and sugary topping. This contrast in textures and flavors, especially when served hot with custard or ice cream, creates a deeply satisfying and cozy experience. </p>
+      <a href="#" class="read-more">Read More →</a>
+    </section>
+
+    <aside class="sidebar">
+      <h4>Latest in Breads</h4>
+      <div class="side-item">
+        <img src="https://images.unsplash.com/photo-1556906781-9a412961c28c?auto=format&fit=crop&w=100&q=80">
+        <p>Coffee bun</p>
+      </div>
+      <div class="side-item">
+        <img src="https://images.unsplash.com/photo-1605475128023-9b6d4f80e229?auto=format&fit=crop&w=100&q=80">
+        <p>Blueberry cheesecake buns</p>
+      </div>
+      <div class="side-item">
+        <img src="https://images.unsplash.com/photo-1617196035734-7a4cc2c8d622?auto=format&fit=crop&w=100&q=80">
+        <p>Strawberry Focaccia</p>
+      </div>
+    </aside>
+  </main>
 </body>
 </html>
